@@ -24,3 +24,7 @@ Route::get('/admin/register', function () {
 Route::get('/admin/dashboard', function() {
     return view("admin.dashboard");
 })->name("dasbor");
+
+Route::get("/admin/postingan", function () {
+    return view("admin.postingan");
+})->name("postingan");
