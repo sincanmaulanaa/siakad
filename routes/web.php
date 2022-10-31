@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,10 +22,12 @@ Route::get('/admin/register', function () {
     return view('admin.auth.register');
 })->name("daftar");
 
-Route::get('/admin/dashboard', function() {
+Route::get('/admin/dashboard', function () {
     return view("admin.dashboard");
 })->name("dasbor");
 
 Route::get("/admin/postingan", function () {
     return view("admin.postingan");
 })->name("postingan");
+
+Route::get("/show-user", [UserController::class, "tampil"]);
