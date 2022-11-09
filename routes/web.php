@@ -26,8 +26,12 @@ Route::get('/admin/dashboard', function () {
     return view("admin.dashboard");
 })->name("dasbor");
 
-Route::get("/admin/postingan", function () {
-    return view("admin.postingan");
-})->name("postingan");
+Route::get("/admin/postingan", [UserController::class, "tampil"])->name("postingan");
+Route::get("/admin/form", [UserController::class, "formInput"])->name("formulir");
+Route::post("/simpan-user", [UserController::class, "simpan"])->name("user_simpan");
 
-Route::get("/show-user", [UserController::class, "tampil"]);
+Route::get("/admin/postingan/update/{id}", [UserController::class, "formEdit"])->name("user_edit");
+Route::put("/update-user/{id}", [UserController::class, "update"])->name("user_update");
+Route::delete("/admin/postingan/hapus/{id}", [UserController::class, "delete"])->name("user_delete");
+
+Route::get("/admin/postingan/detail/{id}", [UserController::class, "detail"])->name("user_detail");
