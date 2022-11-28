@@ -7,30 +7,32 @@
     <div class="container-fluid py-4">
         <div class="card mb-4">
             <div class="card-header pb-0 d-flex justify-content-between">
-                <h6>Tambah User</h6>
+                <h6>Ubah Data Siswa</h6>
             </div>
             <div class="container-lg">
-                <form action="{{ route("user_update", ['id' => $id]) }}" method="post">
+                <form action="{{ route("siswa_update", ['id' => $id]) }}" method="post">
                     @csrf
                     @method("put")
                     <div class="mb-3">
+                        <label for="nis" class="form-label">NIS</label>
+                        <input type="text" name="nis" class="form-control" id="nis">
+                    </div>
+                    <div class="mb-3">
                         <label for="name" class="form-label">Nama Lengkap</label>
-                        <input type="name" name="name" class="form-control" id="name" aria-describedby="name">
+                        <input type="name" name="name" class="form-control" id="name">
                     </div>
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" name="username" class="form-control" id="username">
+                        <label for="gender" class="form-label">Jenis Kelamin</label>
+                        <input type="text" name="gender" class="form-control" id="gender">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" id="email">
-                        <div id="email" class="form-text">We'll never share your email with anyone else.</div>
+                        <label for="address" class="form-label">Alamat</label>
+                        <input type="text" name="address" class="form-control" id="address">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="password">
+                        <label for="class" class="form-label">Kelas</label>
+                        <input type="text" name="class" class="form-control" id="class">
                     </div>
-
                     <button type="submit" class="btn btn-primary">Simpan</button>
                 </form>
             </div>

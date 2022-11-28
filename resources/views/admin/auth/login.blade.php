@@ -14,27 +14,18 @@
                                 <p class="mb-0">Enter your email and password to sign in</p>
                             </div>
                             <div class="card-body">
-                                <form role="form">
+                                <form role="form" action="{{ route("proses_login") }}" method="post">
+                                    @csrf
                                     <div class="mb-3">
-                                        <input type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                                        <input type="username" name="username" class="form-control form-control-lg" placeholder="username" aria-label="username">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="email" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" id="rememberMe">
-                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                        <input type="password" name="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
                                     </div>
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                                        <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                                <p class="mb-4 text-sm mx-auto">
-                                    Don't have an account?
-                                    <a href="<?= route("daftar") ?>" class="text-primary text-gradient font-weight-bold">Sign up</a>
-                                </p>
                             </div>
                         </div>
                     </div>

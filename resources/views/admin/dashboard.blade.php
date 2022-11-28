@@ -11,9 +11,9 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Jumlah Postingan</p>
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Jumlah User</p>
                                     <h5 class="font-weight-bolder">
-                                        $53,000
+                                        120
                                     </h5>
                                 </div>
                             </div>
@@ -32,9 +32,9 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Jumlah Komentar</p>
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Jumlah Guru</p>
                                     <h5 class="font-weight-bolder">
-                                        2,300
+                                        300
                                     </h5>
                                 </div>
                             </div>
@@ -53,9 +53,9 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Jumlah Pengunjung</p>
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Jumlah Siswa</p>
                                     <h5 class="font-weight-bolder">
-                                        +3,462
+                                        100
                                     </h5>
                                 </div>
                             </div>
